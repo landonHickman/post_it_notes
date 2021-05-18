@@ -19,6 +19,20 @@ class PagesController < ApplicationController
   def new
     render component: "PageNew"
   end
+  
+  def edit
+    @page = Page.find(params[:id])
+    render component: "PageEdit", props:{page:@page}
+  end
+  
+  def update
+    @page = Page.find(params[:id])
+    if ( @page.update(page_params))
+      redirect_to pages_path
+    else
+    end
+
+  end
 
   def create
     #create page here
