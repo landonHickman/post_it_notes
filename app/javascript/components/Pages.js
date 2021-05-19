@@ -7,12 +7,12 @@ const Pages = (props) => {
   const renderPages = () => {
     return pages.map( (page) => {
       return(
-        <div>
-          <h1>Note</h1>
-          <h3>{page.title}</h3>
+        <div id="note">
+          <h1 id="title">Note</h1>
+          <h2>{page.title}</h2>
           <p>{page.description}</p>
           {/* <p>{page.id}</p> */}
-          <div>
+          <div >
           <a href={`/pages/${page.id}`}>Show Page</a>
           </div>
           <div>

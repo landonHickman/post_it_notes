@@ -13,3 +13,21 @@
  *= require_tree .
  *= require_self
  */
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+ *{
+  font-family: 'Roboto', sans-serif;
+}
+
+#note {
+background-image: url("95-956970_yellow-postit-post-it-sticky-note-note-paper.png");
+width: 350px;
+height: 400px;
+background-size: cover;
+background-position-x: center;
+padding: 50px;
+text-align: center;
+}
+#title {
+  font-size: 4em;
+}
